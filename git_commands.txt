@@ -1,0 +1,33 @@
+ git init
+  625  git status
+  626  history
+  627  git add testing.py
+  628  git status
+  629  git commit -m "Adding testingfile"
+  630  git status
+  631  git status
+  632  rm testing.py
+  633  git status
+  634  git status
+  635  git restore testing.py
+  636  ls
+  637  ls
+  638  pwd
+  639  git status
+
+  
+  673  git push origin master
+  674  git branch -m master
+  675  git push origin master
+  676  git commit -m "html-commit"
+  677  git push origin master
+  678  git branch -m master
+  679  git push origin master
+  680  git remote set-url origin https://@github.com/chetan0172/Git_commands.git
+  681  git branch -m master
+  682  git push origin master
+  683  git init
+  684  git add .
+  685  git commit -m "html-commits"
+  686  git push origin master
+  687  git status
