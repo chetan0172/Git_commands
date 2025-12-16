@@ -31,3 +31,4 @@
   685  git commit -m "html-commits"
   686  git push origin master
   687  git status
+  687  git --version
