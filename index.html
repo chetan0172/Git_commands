@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cool Static Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    h1 span {
+      color: #00e5ff;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      opacity: 0.9;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #00e5ff;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 30px;
+      border-radius: 30px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn-primary {
+      background: #00e5ff;
+      color: #00323a;
+    }
+
+    .btn-primary:hover {
+      background: #00bcd4;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #fff;
+      border: 2px solid #00e5ff;
+    }
+
+    .btn-secondary:hover {
+      background: #00e5ff;
+      color: #00323a;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="badge">STATIC WEBSITE • HTML ONLY</div>
+
+    <h1>Build. Deploy. <span>Scale.</span></h1>
+
+    <p>
+      A cool modern static page built using pure HTML & CSS.
+      Perfect for DevOps demos, cloud deployments, or portfolio hosting.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>⚡ Fast</h3>
+        <p>No JavaScript frameworks. Loads instantly.</p>
+      </div>
+
+      <div class="card">
+        <h3>☁ Cloud Ready</h3>
+        <p>Deploy on Nginx, S3, Docker, or Kubernetes.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔒 Secure</h3>
+        <p>Static sites reduce attack surface.</p>
+      </div>
+
+      <div class="card">
+        <h3>🚀 Scalable</h3>
+        <p>Works perfectly with CDN & caching.</p>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn btn-primary" onclick="alert('Deployment Successful 🚀')">
+        Test Deployment
+      </button>
+      <button class="btn btn-secondary">
+        View Source
+      </button>
+    </div>
+
+    <footer>
+      © 2025 | Built by a Web Developer 💻
+    </footer>
+  </div>
+
+</body>
+</html>
