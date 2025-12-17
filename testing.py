@@ -1,6 +1,5 @@
-def hello()
+def hello():
+    return "Hello dosto"
 
 
-    this is demo 
-
-return "Hello dosto"
+hello()
